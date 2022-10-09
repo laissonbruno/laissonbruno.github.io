@@ -49,18 +49,25 @@ header > img {
     box-shadow: rgb(28 32 93 / 24%) 0px 2px 8px 0px;
 }
 
-header > h1 {
+header > h1, h2 {
     display: inline-block;
     font-size: 0.8em;
     font-weight: bold;
     border-radius: 1em;
     background-color: #000a;
     color: #fff;
-    padding: 0.3em 0.6em;
-    margin-top: 20px;
+    padding: 0.3em 0.6em;    
     border: 1px solid #fffa;
     backdrop-filter: blur(10px) saturate(160%) contrast(180%);
     -webkit-backdrop-filter: blur(10px) saturate(160%) contrast(180%);
+}
+
+h1{
+    margin-top: 20px;
+}
+
+h2 {
+    margin-top: 5px;
 }
 
 ul {
