@@ -17,29 +17,7 @@
   <link rel="stylesheet" type="text/css" href="./css/index.css">
   <link rel="icon" href="./img/favicon.png">
 
-  <!-- Animação -->
-  <script src="./js/three.min.js"></script>
-  <script src="./js/vanta.clouds2.min.js"></script>
-  <script>
-    window.addEventListener('DOMContentLoaded', () => {
-      VANTA.CLOUDS2({
-        el: "#animacao",
-        mouseControls: true,
-        touchControls: true,
-        gyroControls: false,
-        minHeight: 200.00,
-        minWidth: 200.00,
-        scale: 1.00,
-        speed: 1.50,
-        texturePath: "../img/noise.png"        
-      })
-      setTimeout(() => {
-        const main = document.querySelector('main')
-        main.style.opacity = 1
-        main.style.filter = 'blur(0px)'
-      }, 500)      
-    })  
-    </script>
+
 
   <title>Laisson Bruno - Links</title>
 </head>
@@ -55,37 +33,37 @@
     <ul>
       <li>
         <a href="https://www.laissonbruno.com/">
-          <img src="./img/house-solid.svg" alt="Homepage" width="20"/>
+          <img src="./img/house-solid.svg" alt="Homepage" width="20" />
           Official Website
         </a>
       </li>
       <li>
         <a href="https://www.instagram.com/laissonbrg/">
-        <img src="./img/instagram.svg" alt="Instagram" width="20"/>
-        Instagram - Fotografia & Video
-        </a>      
+          <img src="./img/instagram.svg" alt="Instagram" width="20" />
+          Instagram - Fotografia & Video
+        </a>
       </li>
       <li>
         <a href="https://www.youtube.com/channel/UCdKziMR0Q2dITkeAwG5BqfA">
-        <img src="./img/youtube.svg" alt="Youtube" width="20"/>
-        Youtube
+          <img src="./img/youtube.svg" alt="Youtube" width="20" />
+          Youtube
         </a>
       </li>
       <li>
         <a href="https://www.linkedin.com/in/laissonbruno/">
-        <img src="./img/linkedin.svg" alt="Linkedin" width="20"/>
-        Linkedin
+          <img src="./img/linkedin.svg" alt="Linkedin" width="20" />
+          Linkedin
         </a>
       </li>
       <li>
         <a href="https://github.com/laissonbruno">
-        <img src="./img/github.svg" alt="GitHub" width="20"/>
-        Github
+          <img src="./img/github.svg" alt="GitHub" width="20" />
+          Github
         </a>
-      </li>    
+      </li>
     </ul>
   </main>
- 
+
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
     integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
     crossorigin="anonymous"></script>
@@ -95,6 +73,37 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
     integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
     crossorigin="anonymous"></script>
+
+  <!-- Animação -->
+  <script src="./js/three.min.js"></script>
+  <script src="./js/vanta.birds.min.js"></script>
+  <script>
+    window.addEventListener('DOMContentLoaded', () => {
+      VANTA.BIRDS({
+        el: "#animacao",
+        mouseControls: true,
+        touchControls: true,
+        gyroControls: false,
+        minHeight: 200.00,
+        minWidth: 200.00,
+        scale: 1.00,
+        scaleMobile: 1.00,
+        backgroundColor: 0x1,
+        color1: 0x0,
+        birdSize: 1.10,
+        wingSpan: 15.00,
+        speedLimit: 4.00,
+        separation: 60.00,
+        alignment: 19.00,
+        cohesion: 39.00
+      })
+      setTimeout(() => {
+        const main = document.querySelector('main')
+        main.style.opacity = 1
+        main.style.filter = 'blur(0px)'
+      }, 500)
+    })  
+  </script>
 
 
 
